@@ -64,7 +64,7 @@
     display: flex; /* Flexbox для размещения изображений */
     justify-content: center; /* Центрирование по горизонтали */
     flex-wrap: wrap; /* Перенос на новую строку */
-    gap: 10px; /* Отступы между GIF */
+    gap: 30px; /* Отступы между GIF */
 }
 
 .section-gif {
