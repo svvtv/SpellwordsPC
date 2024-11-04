@@ -1,0 +1,143 @@
+/* Заголовок */
+.title-of-word {
+    text-align: center; /* Центрируем заголовок */
+    font-size: 50px; /* Размер шрифта для заголовка */
+    margin-top: 100px; /* Отступ сверху */
+    color: #333; /* Цвет текста */
+}
+
+/* Контейнер секций */
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 100px;  /* Отступы по бокам */
+    gap: 20px; /* Промежутки между секциями */
+}
+
+/* Секция */
+.section {
+    background-color: white;
+    border: 2px solid rgb(150, 150, 150);
+    border-radius: 10px;
+    width: 600px; /* Фиксированная ширина секции */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Плавный переход при наведении */
+    overflow: hidden; /* Обрезка содержимого, выходящего за пределы секции */
+}
+
+/* Внутренние отступы секции */
+.section-content {
+    padding: 20px; 
+}
+
+/* Стиль изображений секций */
+.section-image {
+    width: 250px;
+    height: 250px; /* Фиксированная высота для изображений */
+    margin: 0 auto; /* Центрируем изображение */
+}
+
+.section img {
+    width: 100%; /* Ширина 100% для адаптивности */
+    height: auto; /* Автоматическое изменение высоты для сохранения пропорций */
+    border-radius: 5px;
+    display: block; /* Убираем нижнее пространство */
+}
+
+/* Заголовок секции */
+.section-title {
+    font-size: 50px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Транскрипция */
+.section-transcription {
+    font-size: 40px; /* Размер шрифта для транскрипции */
+    color: #666; /* Цвет текста транскрипции */
+    margin: 5px 0; /* Отступы */
+}
+
+/* Контейнер для GIF */
+.gif-container {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    flex-wrap: wrap; /* Перенос на новую строку */
+}
+
+/* GIF-изображения */
+.section-gif {
+    margin: 20px; /* Отступы между GIF */
+}
+
+.section-gif img {
+    max-width: 200px; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическая подстройка высоты */
+    border-radius: 5px; /* Радиус углов изображений */
+}
+
+/* Кнопка закрытия */
+.close-container {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start; /* Выравнивание кнопки влево */
+    margin-top: 20px; /* Отступ сверху */
+    margin-left: 20px; /* Отступ слева */
+}
+
+.close-button {
+    width: 200px; /* Фиксированная ширина кнопки */
+    height: 60px; /* Фиксированная высота кнопки */
+    background-color: #007bff; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    font-size: 24px; /* Размер шрифта */
+    padding: 0; /* Убираем внутренние отступы */
+    border: none; /* Без границы */
+    border-radius: 5px; /* Радиус углов */
+    cursor: pointer; /* Указатель мыши */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+.close-button:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .title-of-word {
+        font-size: 30px; /* Уменьшаем размер заголовка на мобильных устройствах */
+    }
+
+    .section-container {
+        margin: 20px; /* Уменьшаем отступы на мобильных устройствах */
+    }
+
+    .section {
+        width: 100%; /* Занимаем 100% ширины */
+        max-width: 600px; /* Максимальная ширина секций */
+    }
+
+    .section-title {
+        font-size: 30px; /* Уменьшаем заголовок в секции */
+    }
+
+    .section-transcription {
+        font-size: 24px; /* Уменьшаем транскрипцию */
+    }
+
+    .section-image {
+        width: 150px; /* Уменьшаем изображение */
+        height: 150px; /* Уменьшаем высоту изображения */
+    }
+
+    .gif-container {
+        flex-direction: column; /* Переключаем направление на вертикальное для мобильных */
+    }
+
+    .close-button {
+        width: 150px; /* Уменьшаем ширину кнопки на мобильных устройствах */
+        font-size: 18px; /* Уменьшаем размер текста кнопки */
+    }
+}
