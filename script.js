@@ -49,9 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const wordInfo = wordsData.find(word => word.name === name);
 
             if (wordInfo) {
-                const gifCount = wordInfo.gifs.length;
-                const gifSize = gifCount === 1 ? '130px' : gifCount === 2 ? '180px' : '130px';
-
                 word.innerHTML = `
                     <div class="close-container">
                         <button class="close-button">Назад</button>
@@ -65,10 +62,10 @@ document.addEventListener("DOMContentLoaded", () => {
                                 </div>
                                 <div class="section-title">${wordInfo.translation}</div>
                                 <div class="section-transcription">${wordInfo.transcription}</div>
-                                <div class="gif-container" style="display: flex; gap: 10px;">
+                                <div class="gif-container">
                                     ${wordInfo.gifs.map(gif => `
-                                        <div class="section-gif" style="max-width: ${gifSize};">
-                                            <img src="videos/${gif}" alt="${wordInfo.name} GIF" style="max-width: 100%; height: auto; border-radius: 5px;">
+                                        <div class="section-gif">
+                                            <img src="videos/${gif}" alt="${wordInfo.name} GIF" class="gif-image">
                                         </div>
                                     `).join('')}
                                 </div>
@@ -77,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 `;
 
-                // Добавить обработчик для кнопки "Назад"
+                // Обработчик для кнопки "Назад"
                 const closeButton = document.querySelector(".close-button");
                 closeButton.addEventListener("click", () => {
                     word.style.display = "none";
@@ -87,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
 
 
 
