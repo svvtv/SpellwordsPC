@@ -43,7 +43,7 @@ header {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
-    width: 200px; /* Фиксированная ширина карточки */
+    width: 300px; /* Фиксированная ширина карточки */
 }
 
 .card:hover {
@@ -51,7 +51,7 @@ header {
 }
 
 .card-image {
-    height: 150px; /* Фиксированная высота для изображений */
+    height: 250px; /* Фиксированная высота для изображений */
     overflow: hidden; /* Обрезка изображений по высоте */
 }
 
@@ -63,7 +63,7 @@ header {
 }
 
 .card-title {
-    font-size: 24px;
+    font-size: 34px;
     margin: 10px 0;
     color: #333;
 }
