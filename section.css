@@ -1,161 +1,154 @@
-/* Заголовок */
 .title-of-word {
-    text-align: center; /* Центрируем заголовок */
-    font-size: 50px; /* Размер шрифта для заголовка */
-    margin-top: 100px; /* Отступ сверху */
-    color: #333; /* Цвет текста */
+    text-align: center;
+    font-size: 50px;
+    margin-top: 100px;
+    color: #333;
 }
 
-/* Контейнер секций */
 .section-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 30px 100px;  /* Отступы по бокам */
-    gap: 20px; /* Промежутки между секциями */
+    margin: 30px 100px;
+    gap: 20px;
 }
 
-/* Секция */
 .section {
     background-color: white;
     border: 2px solid rgb(150, 150, 150);
     border-radius: 10px;
-    width: 600px; /* Фиксированная ширина секции */
+    width: 600px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s; /* Плавный переход при наведении */
-    overflow: hidden; /* Обрезка содержимого, выходящего за пределы секции */
+    transition: transform 0.3s;
+    overflow: hidden;
 }
 
-/* Внутренние отступы секции */
 .section-content {
     padding: 20px; 
 }
 
-/* Стиль изображений секций */
 .section-image {
     width: 250px;
-    height: 250px; /* Фиксированная высота для изображений */
-    margin: 0 auto; /* Центрируем изображение */
+    height: 250px;
+    margin: 0 auto;
 }
 
 .section img {
-    width: 100%; /* Ширина 100% для адаптивности */
-    height: auto; /* Автоматическое изменение высоты для сохранения пропорций */
+    width: 100%;
+    height: auto;
     border-radius: 5px;
-    display: block; /* Убираем нижнее пространство */
+    display: block;
 }
 
-/* Заголовок секции */
 .section-title {
     font-size: 50px;
     margin: 10px 0;
     color: #333;
 }
 
-/* Транскрипция */
 .section-transcription {
-    font-size: 40px; /* Размер шрифта для транскрипции */
-    color: #666; /* Цвет текста транскрипции */
-    margin: 5px 0; /* Отступы */
+    font-size: 40px;
+    color: #666;
+    margin: 5px 0;
 }
 
 .gif-container {
-    display: flex; /* Flexbox для контейнера изображений */
-    justify-content: center; /* Центрирование содержимого по горизонтали */
-    flex-wrap: wrap; /* Позволяем перенос элементов, если не хватает места */
-    gap: 10px; /* Отступы между GIF */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .section-gif {
-    flex: 1 1 30%; /* Каждый GIF занимает 30% ширины контейнера */
-    max-width: 30%; /* Максимальная ширина GIF */
-    box-sizing: border-box; /* Учитываем отступы в расчетах ширины */
+    flex: 1 1 30%;
+    max-width: 30%;
+    box-sizing: border-box;
 }
 
 .gif-image {
-    width: 100%; /* Ширина изображения 100% */
-    height: auto; /* Автомасштаб для сохранения пропорций */
-    border-radius: 5px; /* Радиус углов изображений */
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
-/* Кнопка закрытия */
+
 .close-container {
     position: fixed;
     display: flex;
-    justify-content: flex-start; /* Выравнивание кнопки влево */
-    margin-top: 20px; /* Отступ сверху */
-    margin-left: 20px; /* Отступ слева */
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .close-button {
-    width: 200px; /* Фиксированная ширина кнопки */
-    height: 60px; /* Фиксированная высота кнопки */
-    background-color: #007bff; /* Цвет кнопки */
-    color: white; /* Цвет текста */
-    font-size: 24px; /* Размер шрифта */
-    padding: 0; /* Убираем внутренние отступы */
-    border: none; /* Без границы */
-    border-radius: 5px; /* Радиус углов */
-    cursor: pointer; /* Указатель мыши */
-    transition: background-color 0.3s; /* Плавный переход цвета */
+    width: 200px; 
+    height: 60px; 
+    background-color: #007bff;
+    color: white;
+    font-size: 24px; 
+    padding: 0; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .close-button:hover {
-    background-color: #0056b3; /* Цвет кнопки при наведении */
+    background-color: #0056b3; 
 }
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
     .title-of-word {
-        font-size: 30px; /* Уменьшаем размер заголовка на мобильных устройствах */
+        font-size: 30px;
     }
 
     .section-container {
-        margin: 20px; /* Уменьшаем отступы на мобильных устройствах */
+        margin: 20px; 
     }
 
     .section {
-        width: 100%; /* Занимаем 100% ширины */
-        max-width: 600px; /* Максимальная ширина секций */
+        width: 100%;
+        max-width: 600px;
     }
 
     .section-title {
-        font-size: 30px; /* Уменьшаем заголовок в секции */
+        font-size: 30px; 
     }
 
     .section-transcription {
-        font-size: 24px; /* Уменьшаем транскрипцию */
+        font-size: 24px;
     }
 
     .section-image {
-        width: 150px; /* Уменьшаем изображение */
-        height: 150px; /* Уменьшаем высоту изображения */
+        width: 150px; 
+        height: 150px; 
     }
 
     .gif-container {
-        flex-wrap: nowrap; /* Запрещаем перенос на новую строку */
-        overflow-x: auto; /* Добавляем горизонтальный скроллинг при необходимости */
+        flex-wrap: nowrap;
+        overflow-x: auto; 
     }
 
     .section-gif {
-        flex: 0 0 auto; /* Устанавливаем фиксированную ширину */
-        width: 100px; /* Ширина для каждого GIF */
+        flex: 0 0 auto; 
+        width: 100px;
     }
 
     .gif-image {
-        max-width: 100%; /* GIF не превышает ширину контейнера */
+        max-width: 100%;
     }
 
     .close-container {
         position: fixed;
         display: flex;
-        justify-content: flex-start; /* Выравнивание кнопки влево */
-        margin-top: -10px; /* Отступ сверху */
-        margin-left: 10px; /* Отступ слева */
+        justify-content: flex-start;
+        margin-top: -10px;
+        margin-left: 10px;
     }
 
     .close-button {
-        width: 70px; /* Уменьшаем ширину кнопки на мобильных устройствах */
-        font-size: 10px; /* Уменьшаем размер текста кнопки */
+        width: 70px; 
+        font-size: 10px;
+        height: 40px;
     }
 }
