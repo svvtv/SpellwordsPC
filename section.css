@@ -140,9 +140,15 @@
     .gif-image {
         max-width: 100%; /* GIF не превышает ширину контейнера */
     }
-
+    .close-container {
+        position: fixed;
+        display: flex;
+        justify-content: flex-start; /* Выравнивание кнопки влево */
+        margin-top: 10px; /* Отступ сверху */
+        margin-left: 10px; /* Отступ слева */
+    }
     .close-button {
-        width: 150px; /* Уменьшаем ширину кнопки на мобильных устройствах */
-        font-size: 18px; /* Уменьшаем размер текста кнопки */
+        width: 100px; /* Уменьшаем ширину кнопки на мобильных устройствах */
+        font-size: 15px; /* Уменьшаем размер текста кнопки */
     }
 }
