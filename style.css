@@ -67,6 +67,11 @@ header {
     margin: 10px 0;
     color: #333;
 }
+.card-title2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: grey;
+}
 
 footer {
     position: fixed;
